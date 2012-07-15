@@ -14,7 +14,14 @@
 #  location.from_array(array) # =>  Array of Location objects
 #
 class Location < Struct.new(:countryRank, :country, :cityRank, :city, :stateCode, :stateName, :code, :latitude, :longitude)
-
+  
+  #allows initialization of a new struct with an attribute hash
+  def initialize(attributes = {})
+    attributes.each do |key, value|
+      self[key] = value
+    end
+  end
+  
   # Method +from_array+ returns array of locations(create from json).
   # Takes value of array objects as json parameter array.
   #
