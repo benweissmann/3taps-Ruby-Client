@@ -5,6 +5,10 @@ require 'active_support'
 require 'curb'
 require 'struct'
 
+module ThreeTaps
+  VERSION = '1.0.11'
+end
+
 require 'client/client'
 require 'client/search_client'
 require 'client/posting_client'
@@ -42,3 +46,4 @@ require 'models/posting_history'
 require 'models/source'
 require 'models/annotations/annotation'
 require 'models/annotations/annotation_option'
+

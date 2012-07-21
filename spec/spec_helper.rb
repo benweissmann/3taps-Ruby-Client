@@ -4,6 +4,8 @@ require 'rspec'
 require 'supermodel'
 require 'curb'
 require 'threetaps-client'
+include ThreeTaps
+
 require 'cgi'
 
 # Requires supporting files with custom matchers and macros, etc,
