@@ -3,7 +3,8 @@ require 'cgi'
 require 'supermodel'
 require 'active_support'
 require 'curb'
-require 'struct'
+#require 'struct'
+$:.push File.dirname(__FILE__)
 
 module ThreeTaps
   VERSION = '1.0.11'
